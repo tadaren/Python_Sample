@@ -31,5 +31,5 @@ while loop:
     elif hantei == 2:
         draw+=1
     print("プレイヤーの手は"+te[player-1]+"COMの手は"+te[com-1]+"でプレイヤーの"+battle[hantei])
-    print("勝ち",win,":負け",lose,":引き分け",draw)
+    print("勝ち",win,":負け",lose,":引き分け",draw,"\n")
 print("勝ち",win,":負け",lose,":引き分け",draw)
