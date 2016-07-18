@@ -21,8 +21,8 @@ while loop:
         continue
     com = random.randint(1,3)
     player = int(stdIn)
-    te = ("ぐう","ちょき","ぱあ")
-    battle = ("負け","勝ち","引き分け")
+    te = ('"ぐう"','"ちょき"','"ぱあ"')
+    battle = ('"負け"','"勝ち"','"引き分け"')
     hantei = (player-com+2)%3
     if hantei == 0:
         lose+=1
@@ -30,6 +30,6 @@ while loop:
         win+=1
     elif hantei == 2:
         draw+=1
-    print("プレイヤーの手は"+te[player-1]+"COMの手は"+te[com-1]+"でプレイヤーの"+battle[hantei])
+    print("プレイヤーの手は "+te[player-1]+" COMの手は "+te[com-1]+" でプレイヤーの"+battle[hantei])
     print("勝ち",win,":負け",lose,":引き分け",draw,"\n")
 print("勝ち",win,":負け",lose,":引き分け",draw)
